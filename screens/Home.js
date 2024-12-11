@@ -60,7 +60,7 @@ export default function StartScreen() {
             <Text style={styles.seeAll}>View All ➔</Text>
           </TouchableOpacity>
         </View> 
-    <FlatList
+        <FlatList
               data={chair}
               renderItem={renderItem}
               keyExtractor={(item) => item.id}
