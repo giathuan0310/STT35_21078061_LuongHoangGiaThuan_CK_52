@@ -39,8 +39,7 @@ export default function StartScreen() {
   return (
     <View style={styles.container}>
       <ScrollView style={{ width: "100%", height: 500 }}>
-      {/* <Text style={styles.title}>Hello Again!</Text>
-      <Text style={styles.subtitle}>Log into your </Text> */}
+     
 
       {/* Banner Component */}
       <View style={styles.bannerContainer}>
@@ -48,7 +47,7 @@ export default function StartScreen() {
           <View style={styles.bannerContent}>
             <Text style={styles.bannerTitle}>Renovate your interior</Text>
             {/* <Text style={styles.bannerText}>Feel free to consult with one of our experienced {'\n'} doctors for personalized advice.</Text> */}
-          <TouchableOpacity style={styles.bannerText}>Go to catalog</TouchableOpacity>
+          <TouchableOpacity style={styles.bannerText} onPress={()=>navigation.navigate('')}>Go to catalog</TouchableOpacity>
           </View>
     </View>
     <View style={styles.titleSection}>
