@@ -51,7 +51,22 @@ export default function StartScreen() {
           <TouchableOpacity style={styles.bannerText}>Go to catalog</TouchableOpacity>
           </View>
     </View>
-    
+    <View style={styles.titleSection}>
+          <View style={styles.subtitleContainer}>
+            
+            <Text style={styles.subtitle}>Popular products</Text>
+          </View>
+          <TouchableOpacity>
+            <Text style={styles.seeAll}>View All ➔</Text>
+          </TouchableOpacity>
+        </View> 
+    <FlatList
+              data={chair}
+              renderItem={renderItem}
+              keyExtractor={(item) => item.id}
+              numColumns={2}
+              contentContainerStyle={styles.flatListContent}
+            />
 
 </ScrollView>
     </View>
